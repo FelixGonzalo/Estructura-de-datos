@@ -12,11 +12,9 @@ public class ColaCircular {
         } else {
             fin++;
             if (fin == cola.length + 1) {
-                fin = 1;
-                cola[fin - 1] = dato;
-            } else {
-                cola[fin - 1] = dato;
-            }
+                fin = 1;  
+            } 
+            cola[fin - 1] = dato;
         }
         if (frente == 0) {
             frente = 1;
@@ -36,7 +34,7 @@ public class ColaCircular {
         if (frente == cola.length) {
             frente = 1;
         } else {
-            if (fin != 0) {
+            if (fin != 0) {//controlar el inicio
                 frente++;
             }
 
